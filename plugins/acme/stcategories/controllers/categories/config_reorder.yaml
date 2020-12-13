@@ -2,12 +2,12 @@
 title: Reorder Categories
 
 # Attribute name
-nameFrom: category
+nameFrom: category_name
 
 # Model Class name
-modelClass: Acme\stCategories\Models\Categories
+modelClass: Acme\StCategories\Models\Category
 
 # Toolbar widget configuration
 toolbar:
     # Partial for toolbar buttons
-    buttons: reorder_toolbar
+    buttons: tagbox

@@ -93,4 +93,11 @@ class Plugin extends PluginBase
             ],
         ];
     }
+
+    public function registerFormWidgets()
+    {
+        return [
+            'Acme\StCategories\FormWidgets\Tagbox' => ['name' => 'reorder'],
+        ];
+    }
 }

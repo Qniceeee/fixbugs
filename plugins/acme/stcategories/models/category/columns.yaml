@@ -13,5 +13,7 @@ columns:
 
     updated_at:
         label: Updated
+
+
 type: date
 
