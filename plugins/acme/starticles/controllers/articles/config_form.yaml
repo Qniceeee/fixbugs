@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Article
+
+# Model Form Field configuration
+form: $/acme/starticles/models/articles/fields.yaml
+
+# Model Class name
+modelClass: Acme\StArticles\Models\Articles
+
+# Default redirect location
+defaultRedirect: acme/starticles/articless
+
+# Create page
+create:
+    title: Create Article
+    redirect: acme/starticles/articles/update/:id
+    redirectClose: acme/starticles/articles
+
+# Update page
+update:
+    title: Edit Article
+    redirect: acme/starticles/articles
+    redirectClose: acme/starticles/articles
+
+# Preview page
+preview:
+    title: Preview Article

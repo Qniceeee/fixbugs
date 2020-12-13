@@ -1,0 +1,13 @@
+{% framework %}
+
+{% set articlesSlug = __SELF__.articlesSlug %}
+{% set articlesTags = __SELF__.tags %}
+
+
+<div class="list-group mt-3">
+    {% for slugs in  articlesSlug %}
+
+    <a href="{{ 'articles'|page }}/{{ slugs.slug}}" class="list-group-item list-group-item-action">{{slugs.title}}</a>
+    {% endfor %}
+</div>
+

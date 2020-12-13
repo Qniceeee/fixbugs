@@ -1,0 +1,14 @@
+{% framework %}
+
+<!--Вывод всех категорий(onRun)-->
+{% set categories = __SELF__.category %}
+
+
+<label class="label mt-2 h2">#Категории</label>
+<div class="list-group">
+{% for category in categories %}
+    <a href="{{ 'categories'|page }}/{{ category.slug}}" class="list-group-item list-group-item-action">{{ category.category_name}}</a>
+    {% endfor %}
+</div>
+
+

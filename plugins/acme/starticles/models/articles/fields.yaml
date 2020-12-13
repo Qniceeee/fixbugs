@@ -1,0 +1,34 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Название
+    description:
+              label: Описание
+              type: richeditor
+    category:
+        label: Категория
+        type: relation
+        select: concat(category_name)
+    slug:
+         label: ссылка
+         preset:
+                field:  title
+                type: slug
+    tags:
+        label: Теги
+        type: relation
+        select: concat(tag_name)
+    image:
+        label: Изображение
+        type: fileupload
+        imageHeight: 260
+        imageWidth: 260
+    show_content:
+        label: Отобразить статью Вкл/Выкл
+        type: switch
+        on: Вкл
+        off: Выкл
+

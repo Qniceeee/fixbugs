@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Feedback
+
+# Model Form Field configuration
+form: $/acme/stfeedback/models/feedback/fields.yaml
+
+# Model Class name
+modelClass: Acme\StFeedback\Models\Feedback
+
+# Default redirect location
+defaultRedirect: acme/stfeedback/feedback
+
+# Create page
+create:
+    title: Create Feedback
+    redirect: acme/stfeedback/feedback/update/:id
+    redirectClose: acme/stfeedback/feedback
+
+# Update page
+update:
+    title: Edit Feedback
+    redirect: acme/stfeedback/feedback
+    redirectClose: acme/stfeedback/feedback
+
+# Preview page
+preview:
+    title: Preview Feedback

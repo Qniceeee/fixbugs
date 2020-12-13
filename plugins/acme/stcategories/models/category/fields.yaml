@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+
+
+fields:
+    category_name:
+        label: Category
+        placeholder: Введите имя категории
+    slug:
+        label: slug
+        placeholder: Введите название вашей ссылки
+        preset:
+            field: category_name
+            type: slug
+    show_content:
+        label: Показать категорию Вкл/Выкл
+        type: switch
+        on: Вкл
+        off: Выкл
+

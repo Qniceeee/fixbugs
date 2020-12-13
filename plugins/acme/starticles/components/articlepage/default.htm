@@ -1,0 +1,54 @@
+{% framework %}
+
+{% set article = __SELF__.article %}
+
+
+
+{% if article is null %}
+<li>Такой статьи нет</li>
+{% else %}
+{% for article in  article %}
+<!--выводим картинку-->
+<figure class="figure mt-3">
+    <img src="{{ article.image.path }}" class="figure-img img-fluid rounded" alt="...">
+    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+</figure>
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <!--заголовок статьи-->
+        <th scope="col">{{ article.title}} </th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <!--описание статьи-->
+        <th scope="row">{{ article.description|striptags |raw}}</th>
+    </tr>
+    <tr>
+        <!--Категория статьи-->
+        <th scope="row">Категория: {{ article.category.category_name}}</th>
+    </tr>
+    </tbody>
+</table>
+<!--выводим теги-->
+<table class="table">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">Теги:
+            {% for tags in  article.tags %}
+            {{tags.error}} {{ tags.tag_name}}
+            {% endfor %}
+        </th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+</table>
+
+{% endfor %}
+{% endif %}
+
+
+
+
