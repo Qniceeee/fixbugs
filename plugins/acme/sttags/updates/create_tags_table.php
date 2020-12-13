@@ -12,8 +12,8 @@ class CreateTagsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('tag_name');
-            $table->string('slug')->unique()->nullable();
-            $table->boolean('show_content')->default(true);
+            $table->string('slug')->unique();
+            $table->boolean('show_content');
             $table->integer('sort_order')->unsigned()->nullable();
             $table->timestamps();
         });
