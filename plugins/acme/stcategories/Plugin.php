@@ -54,6 +54,7 @@ class Plugin extends PluginBase
         return [
             'Acme\StCategories\Components\ViewCategoryController' => 'ViewCategoryControllerList',
             'Acme\StCategories\Components\CategoryNavigationPage' => 'CategoryNavigationPageList',
+
         ];
     }
 
@@ -91,6 +92,13 @@ class Plugin extends PluginBase
                 'permissions' => ['acme.stcategories.*'],
                 'order'       => 500,
             ],
+        ];
+    }
+
+    public function registerFormWidgets()
+    {
+        return [
+            'Acme\StCategories\FormWidgets\Tagbox' => ['name' => 'reorder'],
         ];
     }
 }

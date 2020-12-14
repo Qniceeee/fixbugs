@@ -11,13 +11,13 @@ class Categories extends Controller
     /**
      * @var array Behaviors that are implemented by this controller.
      */
-    public $reorderConfig = 'config_reorder.yaml';
+
     public $implement = [
         'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController',
         'Backend.Behaviors.ReorderController',
     ];
-
+    public $reorderConfig = 'config_reorder.yaml';
     /**
      * @var string Configuration file for the `FormController` behavior.
      */
