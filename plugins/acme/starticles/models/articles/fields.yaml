@@ -31,4 +31,7 @@ fields:
         type: switch
         on: Вкл
         off: Выкл
-
+    created_at:
+        label: Дата создания
+    updated_at:
+        label: Дата Обновления

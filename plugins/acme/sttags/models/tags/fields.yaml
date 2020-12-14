@@ -17,4 +17,4 @@ fields:
         type: switch
         on: Вкл
         off: Выкл
-    ->whereIn('show_content', '1')
+

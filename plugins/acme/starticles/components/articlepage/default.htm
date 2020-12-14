@@ -30,6 +30,7 @@
         <!--Категория статьи-->
         <th scope="row">Категория: {{ article.category.category_name}}</th>
     </tr>
+
     </tbody>
 </table>
 <!--выводим теги-->
@@ -45,7 +46,8 @@
     </tr>
     </thead>
 </table>
-
+<li>Дата создания: {{ article.created_at}}</li>
+<li>Дата Обновления: {{ article.updated_at}}</li>
 {% endfor %}
 {% endif %}
 
