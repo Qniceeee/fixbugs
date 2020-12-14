@@ -54,6 +54,7 @@ class Plugin extends PluginBase
         return [
             'Acme\StCategories\Components\ViewCategoryController' => 'ViewCategoryControllerList',
             'Acme\StCategories\Components\CategoryNavigationPage' => 'CategoryNavigationPageList',
+
         ];
     }
 

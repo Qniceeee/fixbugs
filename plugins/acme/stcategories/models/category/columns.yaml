@@ -3,6 +3,7 @@
 # ===================================
 
 columns:
+
     category_name:
         label: category
         searchable: true
@@ -13,7 +14,8 @@ columns:
 
     updated_at:
         label: Updated
-
+    sort_order:
+        label: sort order
 
 type: date
 
