@@ -1,0 +1,13 @@
+# Reorder Title
+title: Reorder Categories
+
+# Attribute name
+nameFrom: category_name
+
+# Model Class name
+modelClass: Acme\StCategories\Models\Category
+
+# Toolbar widget configuration
+toolbar:
+# Partial for toolbar buttons
+

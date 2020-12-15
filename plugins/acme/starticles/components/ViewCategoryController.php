@@ -23,6 +23,6 @@ class ViewCategoryController extends ComponentBase
 
     public function onRun()
     {
-        $this->category = Category::all()->where('show_content', "=", 1);
+        $this->category = Category::all()->where('show_content', "=", 1)->sortBy('sort_order');
     }
 }
