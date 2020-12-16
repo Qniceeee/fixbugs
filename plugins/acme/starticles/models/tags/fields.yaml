@@ -1,0 +1,20 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    tag_name:
+        label: Tag
+        placeholder: Введите ваш тег
+    slug:
+        label: slug
+        placeholder: Введите название вашей ссылки
+        preset:
+            field: tag_name
+            type: slug
+    show_content:
+        label: Включить тег Вкл/Выкл
+        type: switch
+        on: Вкл
+        off: Выкл
+

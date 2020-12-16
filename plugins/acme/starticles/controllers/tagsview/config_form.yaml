@@ -1,0 +1,14 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Tags View
+
+# Model Form Field configuration
+form: $/acme/starticles/models/tags/fields.yaml
+
+# Model Class name
+modelClass: Acme\StArticles\Models\Tags
+
+
