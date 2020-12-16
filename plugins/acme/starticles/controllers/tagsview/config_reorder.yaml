@@ -1,11 +1,11 @@
 # Reorder Title
-title: Reorder Categories
+title: Reorder Tags
 
 # Attribute name
-nameFrom: category_name
+nameFrom: tag_name
 
 # Model Class name
-modelClass: Acme\StCategories\Models\Category
+modelClass: Acme\StArticles\Models\Tags
 
 # Toolbar widget configuration
 toolbar:

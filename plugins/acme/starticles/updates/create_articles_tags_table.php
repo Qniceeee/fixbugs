@@ -13,7 +13,6 @@ class CreateArticlesTagsTable extends Migration
             $table->increments('id');
             $table->integer('article_id')->unsigned();
             $table->integer('tag_id')->unsigned();
-
             $table->foreign('article_id')
                 ->references('id')
                 ->on('acme_starticles_articles')
@@ -21,7 +20,7 @@ class CreateArticlesTagsTable extends Migration
 
             $table->foreign('tag_id')
                 ->references('id')
-                ->on('acme_sttags_tags')
+                ->on('acme_starticles_tags')
                 ->onDelete('cascade');
             $table->timestamps();
         });
@@ -30,6 +29,5 @@ class CreateArticlesTagsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('acme_starticles_articles_tags');
-        Schema::dropIfExists('acme_starticles_articles');
     }
 }

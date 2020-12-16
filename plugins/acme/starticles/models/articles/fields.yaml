@@ -6,17 +6,17 @@ fields:
     title:
         label: Название
     description:
-              label: Описание
-              type: richeditor
+        label: Описание
+        type: richeditor
     category:
         label: Категория
         type: relation
         select: concat(category_name)
     slug:
-         label: ссылка
-         preset:
-                field:  title
-                type: slug
+        label: ссылка
+        preset:
+            field:  title
+            type: slug
     tags:
         label: Теги
         type: relation
@@ -32,6 +32,8 @@ fields:
         on: Вкл
         off: Выкл
     created_at:
-        label: Дата создания
+        label: Дата созданания
+        type: datepicker
     updated_at:
-        label: Дата Обновления
+        label: Дата обновления
+        type: datepicker

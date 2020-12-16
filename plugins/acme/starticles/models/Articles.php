@@ -72,11 +72,11 @@ class Articles extends Model
     public $hasOneThrough = [];
     public $hasManyThrough = [];
     public $belongsTo = [
-        'category' => 'Acme\StCategories\Models\Category',
+        'category' => 'Acme\StArticles\Models\Category',
     ];
     public $belongsToMany = [
         'tags' => [
-            'Acme\stTags\Models\Tags',
+            'Acme\stArticles\Models\Tags',
             'table'    => 'acme_starticles_articles_tags',
             'key'      => 'article_id',
             'otherKey' => 'tag_id'

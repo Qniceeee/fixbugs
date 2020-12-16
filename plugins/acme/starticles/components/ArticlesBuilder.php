@@ -1,8 +1,8 @@
 <?php namespace Acme\StArticles\Components;
 
 use Acme\StArticles\Models\Articles;
-use Acme\StCategories\Models\Category;
-use Acme\StTags\Models\Tags;
+use Acme\StArticles\Models\Category;
+use Acme\StArticles\Models\Tags;
 use Cms\Classes\ComponentBase;
 
 class ArticlesBuilder extends ComponentBase

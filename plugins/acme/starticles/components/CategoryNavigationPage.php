@@ -1,9 +1,8 @@
-<?php namespace Acme\StCategories\Components;
+<?php namespace Acme\StArticles\Components;
 
 use Cms\Classes\ComponentBase;
-use Acme\StCategories\Models\Category;
-use Acme\StArticles\Models\Articles;
-use Acme\StTags\Models\Tags;
+use Acme\StArticles\Models\Category;
+
 class CategoryNavigationPage extends ComponentBase
 {
     public $articlesSlug;
@@ -13,7 +12,7 @@ class CategoryNavigationPage extends ComponentBase
     {
         return [
             'name'        => 'CategoryNavigationPage Component',
-            'description' => 'Показывает статьи категорий'
+            'description' => 'выводит все статьи категории'
         ];
     }
 
@@ -21,6 +20,7 @@ class CategoryNavigationPage extends ComponentBase
     {
         return [];
     }
+
     public function onRun()
     {
         $slugName = $this->param('slug');

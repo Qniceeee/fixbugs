@@ -1,7 +1,7 @@
 <?php namespace Acme\StArticles\Components;
 
 use Acme\StArticles\Models\Articles;
-use Acme\StTags\Models\Tags;
+use Acme\StArticles\Models\Tags;
 use Cms\Classes\ComponentBase;
 use Acme\StArticles\Components\ArticlesBuilder;
 
@@ -13,7 +13,7 @@ class ArticlePage extends ComponentBase
     {
         return [
             'name' => 'ArticlePage Component',
-            'description' => 'Показывает отдельную страницу с категорией'
+            'description' => 'Отображает все статьи конкретной категории'
         ];
     }
 

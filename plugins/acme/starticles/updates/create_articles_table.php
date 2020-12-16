@@ -13,7 +13,7 @@ class CreateArticlesTable extends Migration
             $table->increments('id');
             $table->integer('category_id')->unsigned()->nullable();
             $table->foreign('category_id')->references('id')
-                ->on('acme_stcategories_categories')
+                ->on('acme_starticles_categories')
                 ->onDelete('set null');
             $table->string('title');
             $table->string('slug')->unique();
@@ -25,8 +25,8 @@ class CreateArticlesTable extends Migration
 
     public function down()
     {
+
         Schema::dropIfExists('acme_starticles_articles');
-        Schema::dropIfExists('acme_starticles_articles_tags');
 
     }
 }

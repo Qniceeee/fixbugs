@@ -1,7 +1,13 @@
 1.0.1: First version of stArticles
 1.0.2:
-    - Create article table
-    - create_articles_table.php
+    - Create  +1
+    - create_categories_table.php
 1.0.3:
-    - create tags relations table
+    - create  +2
+    - create_articles_table.php
+1.0.4:
+    - Create  +3
+    - create_tags_table.php
+1.0.5:
+    - Create  +4
     - create_articles_tags_table.php

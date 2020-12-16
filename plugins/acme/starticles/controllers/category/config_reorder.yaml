@@ -5,7 +5,7 @@ title: Reorder Categories
 nameFrom: category_name
 
 # Model Class name
-modelClass: Acme\StCategories\Models\Category
+modelClass: Acme\StArticles\Models\Category
 
 # Toolbar widget configuration
 toolbar:

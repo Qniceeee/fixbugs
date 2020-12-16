@@ -56,6 +56,10 @@ class Plugin extends PluginBase
             'Acme\StArticles\Components\ArticlesBuilder' => 'ArticlesBuilderList',
             'Acme\StArticles\Components\ArticlePage' => 'ArticlePageList',
             'Acme\StArticles\Components\PaginArticlesPage' => 'PaginArticlesPageList',
+            'Acme\StArticles\Components\ViewTagsComponent' => 'ViewTagsComponentList',
+            'Acme\StArticles\Components\ViewTagPage' => 'ViewTagPageList',
+            'Acme\StArticles\Components\ViewCategoryController' => 'ViewCategoryControllerList',
+            'Acme\StArticles\Components\CategoryNavigationPage' => 'CategoryNavigationPageList',
         ];
     }
 
@@ -91,6 +95,7 @@ class Plugin extends PluginBase
                 'permissions' => ['acme.starticles.*'],
                 'order'       => 500,
             ],
+
         ];
     }
 }
